@@ -5,6 +5,7 @@ public class Bus {
     private String destination;
     private int capacity;
     private ArrayList<Person> passengers;
+    private Person person;
 
     public Bus(String destination, int capacity) {
         this.destination = destination;
@@ -16,5 +17,7 @@ public class Bus {
         return this.passengers.size();
     }
 
-
+    public void addPassenger() {
+        this.passengers.add(person);
+    }
 }
